@@ -586,7 +586,8 @@ def decorator(original_function):
     def inner(*args, **kwargs):
         # modify original function, or add extra logic
         return original_function(*args, **kwargs)
-    return inner```
+    return inner
+```
 
 **Also good**
 ```python
