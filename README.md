@@ -581,6 +581,13 @@ print(name)  # 'Ryan McDermott'
 print(new_name)  # ['Ryan', 'McDermott']
 ```
 
+```python
+def decorator(original_function):
+    def inner(*args, **kwargs):
+        # modify original function, or add extra logic
+        return original_function(*args, **kwargs)
+    return inner```
+
 **Also good**
 ```python
 from dataclasses import dataclass
